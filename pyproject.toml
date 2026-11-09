@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools==75.8.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantization-quality-lab"
+version = "1.0.0"
+description = "Auditable local CPU quantization measurements and offline evidence replay"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Lucho Duran"}]
+dependencies = []
+
+[project.scripts]
+quantization-quality-lab = "quantization_quality_lab.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.mypy]
+strict = true
+files = ["src/quantization_quality_lab/core.py", "src/quantization_quality_lab/cli.py"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

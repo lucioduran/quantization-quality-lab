@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "calibration": [],
+  "documents": [
+    {
+      "id": "refund",
+      "text": "A customer can request a refund within thirty days of purchase. The payment is returned to the original card after the returned product arrives."
+    },
+    {
+      "id": "exchange",
+      "text": "A customer can exchange a purchased shirt for another size within thirty days. Exchanges replace the item and do not return money."
+    },
+    {
+      "id": "password",
+      "text": "To reset a forgotten password, choose Forgot password on the sign in page. A reset link is sent to the account email address."
+    },
+    {
+      "id": "email",
+      "text": "To change the email address on an account, open profile settings while signed in and confirm the new address using a verification message."
+    },
+    {
+      "id": "backup",
+      "text": "The nightly backup copies database records to an encrypted archive. A restore operation recovers records deleted accidentally."
+    },
+    {
+      "id": "export",
+      "text": "The export tool downloads current database records as a CSV file for spreadsheet analysis. An export is not a scheduled backup."
+    },
+    {
+      "id": "train",
+      "text": "The airport train leaves the central station every twenty minutes. Train tickets can be bought at station machines before boarding."
+    },
+    {
+      "id": "bus",
+      "text": "The airport bus leaves the central station every forty minutes. Bus tickets are sold by the driver after passengers board."
+    },
+    {
+      "id": "water",
+      "text": "The indoor fern needs moist soil and indirect sunlight. Water the plant when the top layer of soil begins to dry."
+    },
+    {
+      "id": "cactus",
+      "text": "The desert cactus prefers direct sunlight and dry soil. Let the soil dry completely between occasional waterings."
+    },
+    {
+      "id": "cancel",
+      "text": "Canceling a subscription stops the next automatic renewal. Existing paid access continues until the end of the billing period."
+    },
+    {
+      "id": "pause",
+      "text": "Pausing a subscription suspends access temporarily and resumes billing automatically on the selected restart date."
+    }
+  ],
+  "queries": [
+    {
+      "id": "q00a",
+      "split": "development",
+      "text": "How do I get my money back for a returned purchase?",
+      "relevant": "refund"
+    },
+    {
+      "id": "q00b",
+      "split": "held_out",
+      "text": "Will the store return my payment to the card I used?",
+      "relevant": "refund"
+    },
+    {
+      "id": "q01a",
+      "split": "development",
+      "text": "Can I replace a shirt that is too small?",
+      "relevant": "exchange"
+    },
+    {
+      "id": "q01b",
+      "split": "held_out",
+      "text": "I want a larger shirt instead of a refund.",
+      "relevant": "exchange"
+    },
+    {
+      "id": "q02a",
+      "split": "development",
+      "text": "I cannot remember my login password.",
+      "relevant": "password"
+    },
+    {
+      "id": "q02b",
+      "split": "held_out",
+      "text": "Where is the link to reset my forgotten password?",
+      "relevant": "password"
+    },
+    {
+      "id": "q03a",
+      "split": "development",
+      "text": "How can I update the email on my profile?",
+      "relevant": "email"
+    },
+    {
+      "id": "q03b",
+      "split": "held_out",
+      "text": "I am logged in and want messages delivered to a different address.",
+      "relevant": "email"
+    },
+    {
+      "id": "q04a",
+      "split": "held_out",
+      "text": "Can I recover accidentally deleted database records?",
+      "relevant": "backup"
+    },
+    {
+      "id": "q04b",
+      "split": "held_out",
+      "text": "What saves a nightly copy of database data?",
+      "relevant": "backup"
+    },
+    {
+      "id": "q05a",
+      "split": "held_out",
+      "text": "How do I download records to analyze in a spreadsheet?",
+      "relevant": "export"
+    },
+    {
+      "id": "q05b",
+      "split": "held_out",
+      "text": "I need a CSV of the current database.",
+      "relevant": "export"
+    },
+    {
+      "id": "q06a",
+      "split": "held_out",
+      "text": "How often does the rail service leave for the airport?",
+      "relevant": "train"
+    },
+    {
+      "id": "q06b",
+      "split": "held_out",
+      "text": "Where can I buy a ticket for the airport train?",
+      "relevant": "train"
+    },
+    {
+      "id": "q07a",
+      "split": "held_out",
+      "text": "Can I pay the driver for the airport bus?",
+      "relevant": "bus"
+    },
+    {
+      "id": "q07b",
+      "split": "held_out",
+      "text": "How often does the airport bus depart?",
+      "relevant": "bus"
+    },
+    {
+      "id": "q08a",
+      "split": "held_out",
+      "text": "When should I water my indoor fern?",
+      "relevant": "water"
+    },
+    {
+      "id": "q08b",
+      "split": "held_out",
+      "text": "How much sunlight does the fern need?",
+      "relevant": "water"
+    },
+    {
+      "id": "q09a",
+      "split": "held_out",
+      "text": "Should the cactus soil stay wet?",
+      "relevant": "cactus"
+    },
+    {
+      "id": "q09b",
+      "split": "held_out",
+      "text": "Which plant likes dry soil and direct sun?",
+      "relevant": "cactus"
+    },
+    {
+      "id": "q10a",
+      "split": "held_out",
+      "text": "Will canceling stop my next subscription renewal?",
+      "relevant": "cancel"
+    },
+    {
+      "id": "q10b",
+      "split": "held_out",
+      "text": "Does paid access end immediately after cancellation?",
+      "relevant": "cancel"
+    },
+    {
+      "id": "q11a",
+      "split": "held_out",
+      "text": "Can my subscription restart automatically after a break?",
+      "relevant": "pause"
+    },
+    {
+      "id": "q11b",
+      "split": "held_out",
+      "text": "What temporarily suspends access until a restart date?",
+      "relevant": "pause"
+    },
+    {
+      "id": "long0",
+      "split": "held_out",
+      "text": "I am reviewing the general customer information and making notes for a later conversation. Please consider the specific question at the end of this message. I am reviewing the general customer information and making notes for a later conversation. Please consider the specific question at the end of this message. I am reviewing the general customer information and making notes for a later conversation. Please consider the specific question at the end of this message. How do I get my money back for a returned purchase?",
+      "relevant": "refund"
+    },
+    {
+      "id": "long2",
+      "split": "held_out",
+      "text": "I am reviewing the general customer information and making notes for a later conversation. Please consider the specific question at the end of this message. I am reviewing the general customer information and making notes for a later conversation. Please consider the specific question at the end of this message. I am reviewing the general customer information and making notes for a later conversation. Please consider the specific question at the end of this message. I cannot remember my login password.",
+      "relevant": "password"
+    },
+    {
+      "id": "long4",
+      "split": "held_out",
+      "text": "I am reviewing the general customer information and making notes for a later conversation. Please consider the specific question at the end of this message. I am reviewing the general customer information and making notes for a later conversation. Please consider the specific question at the end of this message. I am reviewing the general customer information and making notes for a later conversation. Please consider the specific question at the end of this message. Can I recover accidentally deleted database records?",
+      "relevant": "backup"
+    },
+    {
+      "id": "long6",
+      "split": "held_out",
+      "text": "I am reviewing the general customer information and making notes for a later conversation. Please consider the specific question at the end of this message. I am reviewing the general customer information and making notes for a later conversation. Please consider the specific question at the end of this message. I am reviewing the general customer information and making notes for a later conversation. Please consider the specific question at the end of this message. How often does the rail service leave for the airport?",
+      "relevant": "train"
+    }
+  ]
+}
