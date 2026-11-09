@@ -1,0 +1,5 @@
+build==1.2.2.post1
+mypy==1.15.0
+pytest==8.3.5
+ruff==0.11.13
+setuptools==75.8.2

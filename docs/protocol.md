@@ -21,7 +21,7 @@ For each of 32, 64 and 128 token caps, evaluate exactly the same texts in both
 modes with truncation, recording actual token lengths and truncation counts.
 Also measure a batch-size-one synthetic repeated-text input padded/truncated to
 exactly each target token length. This timing input is not a quality fixture.
-Measure first forward call in a newly loaded process, then 3 untimed warmup calls
+Measure the first forward call at each shape, then 3 untimed warmup calls
 and 15 measured calls. Exclude tokenization and model loading from forward timing.
 Report per-call latency, median, p95 (nearest rank), and reciprocal-median
 throughput for one embedding, not generation tokens per second.
@@ -33,7 +33,9 @@ model creation, after load, and after inference, plus OS process peak RSS. Int8
 architecture construction temporarily creates random float weights; RSS includes
 allocator retention and runtime, so peak RSS is not pure model memory. Three fresh
 workers per mode with alternating mode order reduce, but do not remove, order
-and cache effects. First call is process-cold, not an OS disk-cache cold start.
+and cache effects. Only the first 32-token call is process-cold. The 64/128-token first calls follow
+other inference and are shape-first observations, not cold starts. None is an OS
+disk-cache cold start. Lengths run in ascending order in each worker.
 Report memory and timing per process, never claim isolated machine execution.
 
 All model loading, quantization, inference and benchmarks run under the shared
