@@ -1,0 +1,96 @@
+[
+  {
+    "args": [
+      "prepare"
+    ],
+    "started_utc": "2026-11-09T20:28:41.396478+00:00",
+    "finished_utc": "2026-11-09T20:29:38.990923+00:00",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "\nFetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]\nFetching 9 files:  89%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2589 | 8/9 [00:01<00:00,  7.13it/s]\nFetching 9 files: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 9/9 [00:08<00:00,  1.01it/s]\n"
+  },
+  {
+    "args": [
+      "worker",
+      "--mode",
+      "fp32",
+      "--repeat",
+      "0"
+    ],
+    "started_utc": "2026-11-09T20:29:38.991496+00:00",
+    "finished_utc": "2026-11-09T20:29:48.286122+00:00",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "/Users/luchoduran/Sites/open-source-projects/quantization-quality-lab/.venv/lib/python3.11/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884\n  warnings.warn(\n"
+  },
+  {
+    "args": [
+      "worker",
+      "--mode",
+      "int8",
+      "--repeat",
+      "0"
+    ],
+    "started_utc": "2026-11-09T20:29:48.286634+00:00",
+    "finished_utc": "2026-11-09T20:29:53.749845+00:00",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "/Users/luchoduran/Sites/open-source-projects/quantization-quality-lab/.venv/lib/python3.11/site-packages/torch/_utils.py:383: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()\n  device=storage.device,\n/Users/luchoduran/Sites/open-source-projects/quantization-quality-lab/.venv/lib/python3.11/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884\n  warnings.warn(\n"
+  },
+  {
+    "args": [
+      "worker",
+      "--mode",
+      "int8",
+      "--repeat",
+      "1"
+    ],
+    "started_utc": "2026-11-09T20:29:53.750245+00:00",
+    "finished_utc": "2026-11-09T20:29:59.620586+00:00",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "/Users/luchoduran/Sites/open-source-projects/quantization-quality-lab/.venv/lib/python3.11/site-packages/torch/_utils.py:383: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()\n  device=storage.device,\n/Users/luchoduran/Sites/open-source-projects/quantization-quality-lab/.venv/lib/python3.11/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884\n  warnings.warn(\n"
+  },
+  {
+    "args": [
+      "worker",
+      "--mode",
+      "fp32",
+      "--repeat",
+      "1"
+    ],
+    "started_utc": "2026-11-09T20:29:59.621173+00:00",
+    "finished_utc": "2026-11-09T20:30:05.334227+00:00",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "/Users/luchoduran/Sites/open-source-projects/quantization-quality-lab/.venv/lib/python3.11/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884\n  warnings.warn(\n"
+  },
+  {
+    "args": [
+      "worker",
+      "--mode",
+      "fp32",
+      "--repeat",
+      "2"
+    ],
+    "started_utc": "2026-11-09T20:30:05.334719+00:00",
+    "finished_utc": "2026-11-09T20:30:10.976037+00:00",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "/Users/luchoduran/Sites/open-source-projects/quantization-quality-lab/.venv/lib/python3.11/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884\n  warnings.warn(\n"
+  },
+  {
+    "args": [
+      "worker",
+      "--mode",
+      "int8",
+      "--repeat",
+      "2"
+    ],
+    "started_utc": "2026-11-09T20:30:10.976592+00:00",
+    "finished_utc": "2026-11-09T20:30:16.414571+00:00",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "/Users/luchoduran/Sites/open-source-projects/quantization-quality-lab/.venv/lib/python3.11/site-packages/torch/_utils.py:383: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()\n  device=storage.device,\n/Users/luchoduran/Sites/open-source-projects/quantization-quality-lab/.venv/lib/python3.11/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884\n  warnings.warn(\n"
+  }
+]
